@@ -56,10 +56,7 @@ public class Product {
     @Override
     public String toString() {
         String checkedString = this.isChecked() ? "Да" : "Нет";
-        return this.name + " цена - " + this.price +
-                ". Колличество " + this.necessary +
-                ". Куплен: "+
-                checkedString;
+        return this.name + " цена - " + this.price + " ";
     }
 
 }

@@ -21,8 +21,10 @@ public class Main {
         productList.checkProduct("Грибы");
         System.out.println(productList);
 
-        Recipe recipe = new Recipe(Set.of(onion,potato), "Recipe1");
-        System.out.println(recipe.getProducts());
+        Recipe recipe = new Recipe("Recipe1");
+        recipe.addProduct(onion,1);
+        recipe.addProduct(potato, 2);
+        System.out.println(recipe);
         System.out.println(recipe.getSumPrice());
         System.out.println();
         Task2_2.setOfIntegers();
